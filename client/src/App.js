@@ -59,7 +59,7 @@ const App = () => {
     setTasks(tasks => [...tasks, task]);
   }
 
-  
+  console.log(tasks)
 
   return (
     <div className="App">

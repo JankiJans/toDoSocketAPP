@@ -28,7 +28,7 @@ io.on('connection', (socket) => {
   console.log(tasks)
 
   socket.on('newTask', (task) => {
-    const newTask = { id: socket.id, name: task.title}
+    const newTask = { id: socket.id, name: task.name}
     tasks.push(newTask)
     console.log('New task added:', newTask);
     io.emit('updateData', tasks);
